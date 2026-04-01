@@ -1,0 +1,8 @@
+requests
+networkx
+matplotlib
+streamlit
+pandas
+scikit-learn
+networkx
+matplotlib
