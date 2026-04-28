@@ -1,3 +1,4 @@
+
 """
 ticket_api.py — ResilienceLens Scrum-Style Developer Ticket API
 
@@ -46,8 +47,8 @@ def startup():
     anomaly_model = train_anomaly_model()
     failure_model = train_model()
     config = load_config()
-    print("✅ Scrum Ticket API started")
-    print("✅ Models loaded")
+    print("OK - Scrum Ticket API started")
+    print("OK - Models loaded")
 
 
 class Event(BaseModel):
@@ -557,7 +558,7 @@ def export_tickets():
 @app.get("/")
 def home():
     return {
-        "message": "ResilienceLens Scrum Developer Ticket API is running 🚀",
+        "message": "ResilienceLens Scrum Developer Ticket API is running",
         "routes": [
             "/detect (POST)",
             "/tickets (GET)",

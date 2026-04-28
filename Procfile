@@ -1,3 +1,3 @@
-web: streamlit run dashboard.py --server.port=$PORT --server.address=0.0.0.0
+web: uvicorn ticket_api:app --host 0.0.0.0 --port $PORT
 
 
